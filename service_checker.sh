@@ -16,7 +16,7 @@ for SERVICE in "${SERVICES[@]}"; do
     if systemctl is-active --quiet "$SERVICE"; then
         echo "  [RUNNING]  $SERVICE"
     else
-	echo "  [STOPPED]  $SERVICE"
+        echo "  [STOPPED]  $SERVICE"
     fi
 done
 
